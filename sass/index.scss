@@ -1,0 +1,31 @@
+$dark-grey: #D9D9D9;
+$light-grey: #F7F7F7;
+$blue: #0178FF;
+$size-img: 25px;
+
+
+*,
+*::before,
+*::after {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+body img{
+    width: $size-img;
+    height: $size-img;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 380px;
+    height: 480px;
+    border: 2px solid $blue;
+    border-radius: 15px;
+    
+}

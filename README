@@ -1,0 +1,2 @@
+/**** Launch Sass ***/
+sass --watch .\sass\index.scss .\build\stylesheets\style.css
