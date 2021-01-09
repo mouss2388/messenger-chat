@@ -25,21 +25,20 @@ body img {
   border-radius: 15px;
 }
 
+/*********** TOP-BAR *************/
 .top-chat {
+  height: 35px;
+  flex-basis: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-}
-.top-chat .navigation {
-  border: 1px solid gray;
 }
 .top-chat .navigation p {
   display: inline;
 }
 .top-chat .navigation img {
   vertical-align: middle;
-  border: 1px solid red;
 }
 .top-chat .info-user {
   text-align: center;
@@ -56,6 +55,57 @@ body img {
 }
 .top-chat .call img:last-child {
   margin-right: 13px;
+}
+
+/*********** DISCUSSION CONTENT *************/
+.content-discussion {
+  height: 360px;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+.content-discussion img {
+  width: 45px;
+  height: auto;
+  border-radius: 50%;
+}
+.content-discussion p {
+  width: auto;
+  padding: 20px;
+  border-radius: 15px;
+}
+.content-discussion .msg-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: auto;
+  width: 100%;
+  margin: 32px 0;
+  padding-left: 10px;
+}
+.content-discussion .msg-left img {
+  margin-right: 18px;
+}
+.content-discussion .msg-left p {
+  display: inline-block;
+  color: black;
+  background-color: #d9d9d9;
+}
+.content-discussion .msg-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  height: auto;
+  width: 100%;
+  margin: 32px 0;
+  padding-right: 10px;
+}
+.content-discussion .msg-right img {
+  margin-left: 18px;
+}
+.content-discussion .msg-right p {
+  display: inline-block;
+  color: white;
+  background-color: #0178ff;
 }
 
 /*# sourceMappingURL=style.css.map */
