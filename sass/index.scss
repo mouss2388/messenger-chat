@@ -22,29 +22,31 @@ body {
 
 .container {
   position: absolute;
+  width: 380px;
+  height: 480px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 380px;
-  height: 480px;
-  border: 2px solid $blue;
+  //   border: 2px solid $blue;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.349);
   border-radius: 15px;
 }
 
+/*********** TOP-BAR *************/
 .top-chat {
+  height: 35px;
+  flex-basis: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 
   & .navigation {
-    border: 1px solid gray;
     p {
       display: inline;
     }
     img {
       vertical-align: middle;
-      border: 1px solid red;
     }
   }
 
@@ -57,15 +59,75 @@ body {
   }
 
   & .call {
-      img {
-        vertical-align: middle;
-      }
+    img {
+      vertical-align: middle;
+    }
     img:first-child {
-        margin-right: 5px;
-      }
+      margin-right: 5px;
+    }
 
     img:last-child {
       margin-right: 13px;
+    }
+  }
+}
+
+/*********** DISCUSSION CONTENT *************/
+
+.content-discussion {
+  height: 380px;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+
+  img {
+    width: 45px;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  p {
+    width: auto;
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  .msg-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: auto;
+    width: 100%;
+    margin: 32px 0;
+    padding-left: 10px;
+
+    img {
+      margin-right: 18px;
+    }
+
+    p {
+      display: inline-block;
+      color: black;
+      background-color: $dark-grey;
+    }
+  }
+
+  .msg-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: auto;
+    width: 100%;
+    margin: 32px 0;
+    padding-right: 10px;
+
+    img {
+      margin-left: 18px;
+    }
+
+    p {
+      display: inline-block;
+      color: white;
+      background-color: $blue;
     }
   }
 }
