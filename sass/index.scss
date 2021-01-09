@@ -1,5 +1,5 @@
 $dark-grey: #d9d9d9;
-$light-grey: #f7f7f7;
+$light-grey: #F0F0F0;
 $blue: #0178ff;
 $img-size: 28px;
 $text-size: 16px;
@@ -27,8 +27,8 @@ body {
   transform: translate(-50%, -50%);
   width: 380px;
   height: 480px;
-  border: 2px solid $blue;
   border-radius: 15px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.637);
 }
 
 
@@ -93,6 +93,7 @@ body {
   }
 
   .msg-left {
+    position: relative;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -100,6 +101,7 @@ body {
     width: 100%;
     margin: 32px 0;
     padding-left: 10px;
+    z-index: 1;
 
     img {
       margin-right: 18px;
@@ -113,6 +115,7 @@ body {
   }
 
   .msg-right {
+    position: relative;
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
@@ -120,6 +123,7 @@ body {
     width: 100%;
     margin: 32px 0;
     padding-right: 10px;
+    z-index: 1;
 
     img {
       margin-left: 18px;
@@ -132,3 +136,29 @@ body {
     }
   }
 }
+
+/*********** BOTTOM-BAR *************/
+
+.bottom-chat {
+    height: 35px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $light-grey;
+    border-radius: 0 0 15px 15px;
+    z-index: 2;
+    textarea {
+        height: 25px;
+        flex-basis: 250px;
+        border-radius: 15px;
+        border: none;
+        resize: none;
+        line-height:25px;
+    }
+    .buttons {
+        margin-right: 5px;
+    }
+    
+}
+

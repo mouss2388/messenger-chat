@@ -21,8 +21,8 @@ body img {
   transform: translate(-50%, -50%);
   width: 380px;
   height: 480px;
-  border: 2px solid #0178ff;
   border-radius: 15px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.637);
 }
 
 /*********** TOP-BAR *************/
@@ -74,6 +74,7 @@ body img {
   border-radius: 15px;
 }
 .content-discussion .msg-left {
+  position: relative;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -81,6 +82,7 @@ body img {
   width: 100%;
   margin: 32px 0;
   padding-left: 10px;
+  z-index: 1;
 }
 .content-discussion .msg-left img {
   margin-right: 18px;
@@ -91,6 +93,7 @@ body img {
   background-color: #d9d9d9;
 }
 .content-discussion .msg-right {
+  position: relative;
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
@@ -98,6 +101,7 @@ body img {
   width: 100%;
   margin: 32px 0;
   padding-right: 10px;
+  z-index: 1;
 }
 .content-discussion .msg-right img {
   margin-left: 18px;
@@ -106,6 +110,29 @@ body img {
   display: inline-block;
   color: white;
   background-color: #0178ff;
+}
+
+/*********** BOTTOM-BAR *************/
+.bottom-chat {
+  height: 35px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F0F0F0;
+  border-radius: 0 0 15px 15px;
+  z-index: 2;
+}
+.bottom-chat textarea {
+  height: 25px;
+  flex-basis: 250px;
+  border-radius: 15px;
+  border: none;
+  resize: none;
+  line-height: 25px;
+}
+.bottom-chat .buttons {
+  margin-right: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
